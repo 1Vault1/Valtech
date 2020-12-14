@@ -9,7 +9,7 @@
 
 <body>
 
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
       <div class="header-holder">
 
@@ -22,18 +22,18 @@
         <nav id="mainLinks" class="link-nav">
           <ul class="list">
             <li class="list-item">
-              <a class="link" href="#">
+              <a class="link" href="#ourServices">
                 Services
               </a>
             </li>
             <li class="list-item">
-              <a class="link" href="#">
+              <a class="link" href="#ourClients">
                 Clients
               </a>
             </li>
             <li class="list-item">
-              <a class="link" href="#">
-                Clients
+              <a class="link" href="#ourTeam">
+                Our team
               </a>
             </li>
             <li class="list-item">
@@ -41,17 +41,17 @@
             </li>
           </ul>
         </nav>
-        <a id="burger" class="burger-menu" href="#">
+        <button id="burger" class="burger-menu">
           <span></span>
           <span></span>
           <span></span>
-        </a>
+        </button>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="contact-us">
+    <section class="contact-us-section">
       <div class="container">
         <h1 class="title">
           We're an international development agency.
@@ -66,245 +66,268 @@
       </div>
     </section>
 
-    <section class="our-services">
+    <section id="ourServices" class="our-services-section">
 
       <div class="separator">
         <h4 class="title">OUR SERVICES</h4>
       </div>
 
-      <div class="container">
-        <div class="services-holder">
+      <div class="container services-holder">
+        <div class="col">
+          <a href="#" class="services-block">
+            <div class="icon-holder">
+              <svg width="34" height="60">
+                <use xlink:href="spritemap.svg#sprite-smartphone"></use>
+              </svg>
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Mobile Development</h3>
+              <p>We develop mobile apps for all contemporary
+                mobile platforms. Mamon team builds
+                native and cross-platform solutions.</p>
+            </div>
+          </a>
 
-          <div class="col">
-            <a href="#" class="services-block">
-              <div class="icon-holder">
-                <img src="assets/images/smartphone.svg" alt="smartphone">
-              </div>
-              <div class="text-holder">
-                <h3 class="title">Mobile Development</h3>
-                <p>We develop mobile apps for all contemporary
-                  mobile platforms. Mamon team builds
-                  native and cross-platform solutions.</p>
-              </div>
-            </a>
+          <a href="#" class="services-block">
+            <div class="icon-holder">
+              <svg width="80" height="60">
+                <use xlink:href="spritemap.svg#sprite-monitor"></use>
+              </svg>
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Web Development</h3>
+              <p>Mamon offers full range of services from various
+                CMS and frameworks based websites to complex
+                ERP/CRM solutions and e-commerce stores.</p>
+            </div>
+          </a>
+        </div>
 
-            <a href="#" class="services-block">
-              <div class="icon-holder">
-                <img src="assets/images/monitor.svg" alt="monitor">
-              </div>
-              <div class="text-holder">
-                <h3 class="title">Web Development</h3>
-                <p>Mamon offers full range of services from various
-                  CMS and frameworks based websites to complex
-                  ERP/CRM solutions and e-commerce stores.</p>
-              </div>
-            </a>
-          </div>
+        <div class="col">
+          <a href="#" class="services-block">
+            <div class="icon-holder">
+              <svg width="80" height="61">
+                <use xlink:href="spritemap.svg#sprite-layers"></use>
+              </svg>
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Product Design</h3>
+              <p>We create design given the product audience,
+                goal, business domain, technology and
+                the platform for the solution.</p>
+            </div>
+          </a>
 
-          <div class="col">
-            <a href="#" class="services-block">
-              <div class="icon-holder">
-                <img src="assets/images/layers.svg" alt="layers">
-              </div>
-              <div class="text-holder">
-                <h3 class="title">Product Design</h3>
-                <p>We create design given the product audience,
-                  goal, business domain, technology and
-                  the platform for the solution.</p>
-              </div>
-            </a>
-
-            <a href="#" class="services-block">
-              <div class="icon-holder">
-                <img src="assets/images/test.svg" alt="test">
-              </div>
-              <div class="text-holder">
-                <h3 class="title">Quality Assurance</h3>
-                <p>Our QA team ensures high standard of
-                  quality of products delivered.
-                </p>
-              </div>
-            </a>
-          </div>
-
+          <a href="#" class="services-block">
+            <div class="icon-holder">
+              <svg width="46" height="60">
+                <use xlink:href="spritemap.svg#sprite-test"></use>
+              </svg>
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Quality Assurance</h3>
+              <p>Our QA team ensures high standard of
+                quality of products delivered.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="our-clients">
+    <section id="ourClients" class="our-clients-section">
 
       <div class="separator">
         <h4 class="title">OUR CLIENTS</h4>
       </div>
 
-      <div class="container">
-        <div class="clients-holder">
-          <div class="col">
-            <div class="logo-holder">
-              <a href="" class="link">
-                <img src="./assets/images/logo-lightspeed.svg" alt="lightspeed">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-trvl.svg" alt="trvl">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-spider-strategies.svg" alt="Spider Strategies">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-tripadvisor.svg" alt="tripadvisor">
-              </a>
-            </div>
+      <div class="container clients-holder">
+        <div class="col">
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="171" height="40">
+                <use xlink:href="spritemap.svg#sprite-logo-lightspeed"></use>
+              </svg>
+            </a>
           </div>
-          <div class="col">
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-shutterfly.svg" alt="shutterfly">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-decos.svg" alt="decos">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-tiqets.svg" alt="tiqers">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-hotelchamp.svg" alt="hotelchamp">
-              </a>
-            </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="62" height="54">
+                <use xlink:href="spritemap.svg#sprite-logo-trvl"></use>
+              </svg>
+            </a>
           </div>
-          <div class="col">
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-flitsmeister.svg" alt="flitsmeister">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-sap.svg" alt="sap">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-redkix.svg" alt="redkix">
-              </a>
-            </div>
-            <div class="logo-holder">
-              <a href="#" class="link">
-                <img src="./assets/images/logo-nos.svg" alt="nos">
-              </a>
-            </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="155" height="48">
+                <use xlink:href="spritemap.svg#sprite-logo-spider-strategies"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="183" height="30">
+                <use xlink:href="spritemap.svg#sprite-logo-tripadvisor"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="139" height="35">
+                <use xlink:href="spritemap.svg#sprite-logo-shutterfly"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="149" height="22">
+                <use xlink:href="spritemap.svg#sprite-logo-decos"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="102" height="39">
+                <use xlink:href="spritemap.svg#sprite-logo-tiqets"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="174" height="32">
+                <use xlink:href="spritemap.svg#sprite-logo-hotelchamp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="177" height="39">
+                <use xlink:href="spritemap.svg#sprite-logo-flitsmeister"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="85" height="43">
+                <use xlink:href="spritemap.svg#sprite-logo-sap"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="145" height="40">
+                <use xlink:href="spritemap.svg#sprite-logo-redkix"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="logo-holder">
+            <a href="#" class="link">
+              <svg class="icon" width="93" height="53">
+                <use xlink:href="spritemap.svg#sprite-logo-nos"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="our-team-section">
+    <section id="ourTeam" class="our-team-section">
 
       <div class="separator">
         <h4 class="title">OUR TEAM</h4>
       </div>
 
-      <div class="container">
-        <div class="team-holder">
-          <div class="col">
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
+      <div class="container team-holder">
+        <div class="col">
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/woman-03.svg" alt="person">
             </div>
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
-            </div>
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
+            <div class="text-holder">
+              <h3 class="title">Nina</h3>
+              <p>Team Manager</p>
             </div>
           </div>
-          <div class="col">
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/man-05.svg" alt="person">
             </div>
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
-            </div>
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
+            <div class="text-holder">
+              <h3 class="title">Tizzy</h3>
+              <p>Front-end Developer</p>
             </div>
           </div>
-          <div class="col">
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/man-04.svg" alt="person">
             </div>
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
-            </div>
-            <div class="team-item">
-              <div class="img-holder">
-                <img src="./assets/images/man-01.svg" alt="">
-              </div>
-              <div class="text-holder">
-                <h3>Nina</h3>
-                <p>Team Manager</p>
-              </div>
+            <div class="text-holder">
+              <h3 class="title">Tom</h3>
+              <p>QA Automation</p>
             </div>
           </div>
-
+        </div>
+        <div class="col">
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/man-01.svg" alt="person">
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Alex</h3>
+              <p>Alex</p>
+            </div>
+          </div>
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/man-02.svg" alt="person">
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Thomas</h3>
+              <p>Mobile Developer</p>
+            </div>
+          </div>
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/woman-02.svg" alt="person">
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Claire</h3>
+              <p>Back-end Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/man-02.svg" alt="person">
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Stiven</h3>
+              <p>Back-end Developer</p>
+            </div>
+          </div>
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/woman-01.svg" alt="person">
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Anna-Marie</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <div class="person-holder">
+            <div class="img-holder">
+              <img src="./assets/images/man-01.svg" alt="person">
+            </div>
+            <div class="text-holder">
+              <h3 class="title">Ernst</h3>
+              <p>Back-end Developer</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -312,39 +335,42 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-holder">
-        <svg class="svg-el">
-          <use xlink:href="assets/images/_sprite.svg#facebook"></use>
-        </svg>
-        <div class="logo-holder">
-          <img src="assets/images/logo-valtech.svg" alt="Valtech_">
-        </div>
-        <nav class="nav-links">
-          <ul class="list">
-            <li class="list-item">
-              <a href="#" class="item">
-                <img src="./assets/images/icon-github.svg" alt="github">
-              </a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="item">
-                <img src="./assets/images/icon-be.svg" alt="be">
-              </a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="item">
-                <img src="./assets/images/icon-linkedin.svg" alt="in">
-              </a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="item">
-                <img src="./assets/images/icon-codepen.svg" alt="codepen">
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <div class="container footer-holder">
+      <div class="logo-holder">
+        <img src="assets/images/logo-valtech.svg" alt="Valtech_">
       </div>
+      <nav class="nav-links">
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="item">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="spritemap.svg#sprite-icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="item">
+              <svg class="icon" width="27" height="18">
+                <use xlink:href="spritemap.svg#sprite-icon-be"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="item">
+              <svg class="icon" width="21" height="22">
+                <use xlink:href="spritemap.svg#sprite-icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="item">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="spritemap.svg#sprite-icon-codepen"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
     </div>
   </footer>

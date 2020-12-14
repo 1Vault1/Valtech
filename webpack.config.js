@@ -1,13 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
   entry: './src/js/main.js',
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'source-map',
@@ -79,5 +80,6 @@ module.exports = {
       filename: '[name].[chunkhash].css',
       chunkFilename: '[id].css'
     }),
+    new SVGSpritemapPlugin(),
   ]
 };

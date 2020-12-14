@@ -1,13 +1,21 @@
-.contact-us {
-  padding: 90px 0;
+.contact-us-section {
+  padding: 90px 0 0;
+
+  @include media("<tablet") {
+    padding: 30px 0 0;
+  }
 
   .title {
     margin-bottom: 45px;
     font-size: 58px;
-    line-height: 74px;
     font-weight: 400;
     color: $mine-shaft;
     text-align: center;
+
+    @include media("<tablet") {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   .text-holder {
@@ -15,8 +23,23 @@
     font-size: 32px;
     color: $emperor;
 
-    p {
-      line-height: 57px;
+    @include media("<tablet") {
+      margin-bottom: 30px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    @include media(">tablet") {
+      p {
+        line-height: 57px;
+      }
+    }
+  }
+
+  .btn-holder {
+    @include media("<tablet") {
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -25,5 +48,11 @@
     padding: 10px;
     font-size: 28px;
     box-shadow: 0px 7px 3px -3px rgba(0, 0, 0, 0.4);
+
+    @include media("<tablet") {
+      min-width: max-content;
+      font-size: 24px;
+      box-shadow: none;
+    }
   }
 }
