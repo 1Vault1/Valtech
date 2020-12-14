@@ -1,0 +1,58 @@
+.our-services {
+  .services-holder {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services-block {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      .title,
+      p {
+        color: $blue;
+      }
+    }
+  }
+
+  .icon-holder {
+    width: 200px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .text-holder {
+    width: 100%;
+    max-width: 275px;
+
+    .title {
+      margin-bottom: 20px;
+      color: $black;
+      font-size: 28px;
+      transition: color 0.4s;
+    }
+
+    p {
+      color: $silver;
+      line-height: 22px;
+      transition: color 0.4s;
+    }
+  }
+
+  .col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+  }
+}

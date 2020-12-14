@@ -1,0 +1,78 @@
+@import "common/variables";
+@import "common/reset";
+@import "common/normalize";
+@import "common/include-media";
+
+@import "header";
+@import "contact-us-section";
+@import "our-services-section";
+@import "our-clients-section";
+@import "our-team-section";
+@import "footer";
+
+body {
+  font-family: $Abel, $base-font-sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $silver;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 140px;
+
+  @include media("<phone") {
+    padding-top: 80px;
+  }
+}
+
+.btn {
+  font-weight: 400;
+  background: $blue;
+  color: $white;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 1s;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    background: $white;
+    box-shadow: 0px 0px 0px 2px $blue;
+  }
+}
+
+.separator {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background: $grey;
+    z-index: -1;
+  }
+
+  .title {
+    margin-left: 11%;
+    width: max-content;
+    background: $white;
+    padding: 0 16px;
+    font-size: 20px;
+    color: $grey;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

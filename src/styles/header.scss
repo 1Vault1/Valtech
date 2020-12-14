@@ -1,0 +1,135 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 0;
+  background: rgba($white, 0.6);
+  z-index: 1;
+
+  @include media("<tablet") {
+    padding: 30px 0;
+  }
+
+  .header-holder {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include media(">phone", "<tablet") {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include media("<phone") {
+      align-items: center;
+    }
+  }
+
+  .logo-holder {
+    @include media("<tablet") {
+      margin-bottom: 20px;
+    }
+    @include media("<phone") {
+      margin-bottom: 0;
+    }
+  }
+
+  .link-nav {
+    @include media("<phone") {
+      transition: opacity 0.4s;
+      opacity: 0;
+    }
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  .list {
+    display: flex;
+
+    @include media("<phone") {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      left: 0;
+      flex-direction: column;
+      background: $blue;
+    }
+  }
+
+  .list-item:not(:last-child) {
+    display: flex;
+    align-items: center;
+    margin-right: 41px;
+  }
+
+  .link {
+    background: linear-gradient(to bottom, $blue 0%, $blue 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0 0;
+    font-size: 16px;
+    color: $mine-shaft;
+    text-decoration: none;
+    transition: background-size 0.2s;
+
+    &:hover {
+      background-size: 100% 4px;
+    }
+
+    @include media("<phone") {
+      color: $white;
+      margin: 10px;
+    }
+  }
+
+  .btn {
+    min-width: 100px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.25s;
+
+    @include media("<phone") {
+      text-align: left;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 16px;
+
+  @include media("<phone") {
+    display: block;
+  }
+
+  span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 3px;
+    background: $blue;
+    border-radius: 5px;
+    transition: 0.4s;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+}
